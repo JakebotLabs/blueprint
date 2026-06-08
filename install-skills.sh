@@ -63,8 +63,10 @@ main() {
   echo "Installation complete!"
   echo ""
   echo "Commands:"
-  echo "  /blueprint <description>      Start a new plan session with Q&A"
-  echo "  /blueprint-generate            Generate the plan from Q&A"
+  echo "  /blueprint <description>          Start a new plan session with Q&A"
+  echo "  /blueprint-generate                Generate the plan from Q&A"
+  echo "  /brainstorm-v2 <description>      Start a WHAT-only scope-locking session (JakebotLabs fork)"
+  echo "  /brainstorm-generate-v2            Write requirements.md from the Q&A"
 }
 
 main "$@"
