@@ -21,7 +21,7 @@ mkdir -p blueprint/<slug>
 
 ### Step 3: Synthesize the most recent refined requirements
 
-Use the most recent refined requirements from the Q&A conversation. If for any reason it wasn't shown in the most recent round, regenerate now per [refine-requirements.md](../../brainstorm-v2/references/refine-requirements.md).
+Use the most recent refined requirements from the Q&A conversation. If for any reason it wasn't shown in the most recent round, regenerate now per [refine-requirements.md](../brainstorm-v2/references/refine-requirements.md).
 
 ### Step 4: Write requirements.md
 
