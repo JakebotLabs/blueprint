@@ -1,11 +1,11 @@
 ---
 name: brainstorm-v2
-description: Start a WHAT-only scope-locking session for a new feature. Produces a durable requirements doc through multi-round Q&A. Hand off to /plan-v2 or /blueprint for implementation planning.
+description: Start a WHAT-only scope-locking session for a new feature. Produces a durable requirements doc through multi-round Q&A. Hand off to /blueprint for implementation planning.
 ---
 
 ## Brainstorm-v2 — Lock scope before implementation
 
-Start a WHAT-only Q&A session. The goal is to produce a `requirements.md` artifact that locks the feature's PROBLEM / PERSONAS / SUCCESS CRITERIA / OUT OF SCOPE / OPEN QUESTIONS before any implementation planning. Implementation questions belong in `/plan-v2` (or in a `/blueprint` run that consumes this requirements doc) — DO NOT ask them here.
+Start a WHAT-only Q&A session. The goal is to produce a `requirements.md` artifact that locks the feature's PROBLEM / PERSONAS / SUCCESS CRITERIA / OUT OF SCOPE / OPEN QUESTIONS before any implementation planning. Implementation questions belong in a `/blueprint` run that consumes this requirements doc — DO NOT ask them here.
 
 ### Step 1: Parse the feature description
 
@@ -18,7 +18,7 @@ Scan the workspace for:
 - Open Issues and recent merged PRs referencing the feature name (for state-of-the-world)
 - The repo's CLAUDE.md and any user-facing README (for personas and product framing)
 
-DO NOT do deep source-file reading here. That's `/plan-v2`'s job. Grounding here is enough to ask informed WHAT questions, no more.
+DO NOT do deep source-file reading here. That's `/blueprint`'s job. Grounding here is enough to ask informed WHAT questions, no more.
 
 If anchor docs exist, lead the first question round with: "Anchor docs found: `[list]`. I'll honor these unless your answers contradict them."
 
@@ -43,10 +43,10 @@ Once you're done answering, I'll follow up with more questions. When you're read
 ```
 
 DO NOT ask implementation questions:
-- "Which file should we touch?" — NO. That's /plan-v2.
-- "Test strategy?" — NO. That's /plan-v2.
-- "Rollback approach?" — NO. That's /plan-v2.
-- "Single PR or multiple?" — NO. That's /plan-v2.
+- "Which file should we touch?" — NO. That's /blueprint.
+- "Test strategy?" — NO. That's /blueprint.
+- "Rollback approach?" — NO. That's /blueprint.
+- "Single PR or multiple?" — NO. That's /blueprint.
 
 If you catch yourself drafting a HOW question, drop it and ask the underlying WHAT question instead. ("What's the rollback model?" → "What does it mean for this feature to be reversible?")
 

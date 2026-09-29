@@ -42,6 +42,6 @@ Bulleted list of explicit non-goals. Each bullet includes WHY (cost, scope creep
 Each unresolved scope question on a bullet. Format:
 
 - **Q:** the question
-- **Status:** one of: decision deferred to /plan-v2 / blocked on Director / surfaced but unanswered / requires user research
+- **Status:** one of: decision deferred to /blueprint / blocked on Director / surfaced but unanswered / requires user research
 
-This section is non-empty by default. Perfect WHAT-lock is impossible — surface what's still open so /plan-v2 (or `/blueprint`) inherits the right uncertainty.
+This section is non-empty by default. Perfect WHAT-lock is impossible — surface what's still open so `/blueprint` inherits the right uncertainty.
