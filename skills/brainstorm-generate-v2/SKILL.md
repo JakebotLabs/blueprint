@@ -41,7 +41,7 @@ Place the line after all other content, separated by a blank line.
 
 After writing, tell the user:
 - The requirements file path (in a code block so it's easy to copy)
-- That they can run `/plan-v2` (when available) or `/blueprint` against this doc for implementation planning
+- That they can run `/blueprint` against this doc for implementation planning
 - That the requirements doc is durable — they can edit it directly, or re-run `/brainstorm-v2` to refine
 
 Do NOT enter a refinement phase. Brainstorm-v2 keeps termination clean. If the user wants to refine, they invoke `/brainstorm-v2` again with the existing requirements as context.
